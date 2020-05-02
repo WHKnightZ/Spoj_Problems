@@ -28,19 +28,11 @@ Struct Dumb(int l, int r) {
     Struct SR = Dumb(l, r - 1);
     int L = Array[l] - SL.Max;
     int R = Array[r] - SR.Max;
-    if (SL.Deg == 0) {
-        if (L > R) {
-            return Save[l][r] = Struct(L, 1 - SL.Deg, SL.Sum + (1 - SL.Deg) * Array[l]);
-        } else {
-            return Save[l][r] = Struct(R, 1 - SR.Deg, SR.Sum + (1 - SR.Deg) * Array[r]);
-        }
-    } else {
-        if (L < R) {
-            return Save[l][r] = Struct(L, 1 - SL.Deg, SL.Sum + (1 - SL.Deg) * Array[l]);
-        } else {
-            return Save[l][r] = Struct(R, 1 - SR.Deg, SR.Sum + (1 - SR.Deg) * Array[r]);
-        }
-    }
+    int D = 1 - SL.Deg;
+    if ((D == 1 && L > R) || (D == 0 && L < R))
+        return Save[l][r] = Struct(L, D, SL.Sum + D * Array[l]);
+    else
+        return Save[l][r] = Struct(R, D, SR.Sum + D * Array[r]);
 }
 
 Struct Smart(int l, int r) {
@@ -52,11 +44,11 @@ Struct Smart(int l, int r) {
     Struct SR = Smart(l, r - 1);
     int L = Array[l] - SL.Max;
     int R = Array[r] - SR.Max;
-    if (L > R) {
-        return Save[l][r] = Struct(L, 1 - SL.Deg, SL.Sum + (1 - SL.Deg) * Array[l]);
-    } else {
-        return Save[l][r] = Struct(R, 1 - SR.Deg, SR.Sum + (1 - SR.Deg) * Array[r]);
-    }
+    int D = 1 - SL.Deg;
+    if (L > R)
+        return Save[l][r] = Struct(L, D, SL.Sum + D * Array[l]);
+    else
+        return Save[l][r] = Struct(R, D, SR.Sum + D * Array[r]);
 }
 
 int main() {
