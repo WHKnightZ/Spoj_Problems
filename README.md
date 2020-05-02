@@ -1,2 +1,3 @@
-# SPOJ_PROBLEMS
+# Spoj Problems
+
 Spoj Problems Solved
