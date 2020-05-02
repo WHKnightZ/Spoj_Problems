@@ -13,4 +13,5 @@ Spoj Problems Solved
 - QUE1
 - STPAR
 - DIEHARD 11:45am 02/05/2020
+- CODEM4 03:15pm 02/05/2020 but ugly code
 ```
