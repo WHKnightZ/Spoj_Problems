@@ -4,7 +4,7 @@ Spoj Problems Solved
 
 ## Problems Solved:
 
-'''
+```
 - ACODE
 - ANARC09A
 - COINS
@@ -13,4 +13,4 @@ Spoj Problems Solved
 - QUE1
 - STPAR
 - DIEHARD 11:45am 02/05/2020
-'''
+```
