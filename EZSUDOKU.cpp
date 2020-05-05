@@ -87,8 +87,6 @@ bool Solve() {
 }
 
 int main() {
-    freopen ("Input.txt", "r", stdin);
-
     int Test, Value, n;
     cin >> Test;
     for (int k = 0; k < Test; k++) {
@@ -106,7 +104,5 @@ int main() {
         }
 
     }
-
-    //fclose (stdin);
     return 0;
 }

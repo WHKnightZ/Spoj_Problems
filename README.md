@@ -4,7 +4,6 @@ Spoj Problems Solved
 
 ## Problems Solved:
 
-```
 - ACODE
 - ANARC09A
 - COINS
@@ -17,4 +16,4 @@ Spoj Problems Solved
 - INVCNT 12:15am 03/05/2020 Merge sort, lúc đầu sử dụng thuật toán tương tự Selection sort -> o(n2) chậm -> chuyển thành o(nlogn)
 - ARRANGE 04:30pm 03/05/2020 bài này khá "hài", chỉ sử dụng mỗi toán học
 - EZSUDOKU 07:45am 05/05/2020 kết hợp Quay lui + Quy hoạch động (lưu trữ)
-```
+- ALLIZWEL 10:15am 05/05/2020 DFS với những điểm là 'A', xét 8 hướng, nếu theo hướng đó đi được thì DFS tiếp
