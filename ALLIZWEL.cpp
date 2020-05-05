@@ -17,7 +17,7 @@ char DEG[] = "ALLIZZWELL";
 
 char Map[MAX][MAX];
 bool Mark[MAX][MAX];
-int Current, Max = 9;
+int Max = 9;
 bool Done;
 int Max_X, Max_Y;
 
