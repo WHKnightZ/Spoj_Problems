@@ -25,7 +25,6 @@ void DFS(int n) {
 
 int main() {
     int a, b;
-    Count = 0;
     cin >> N >> M;
     if (M != N - 1) {
         cout << "NO";
@@ -40,6 +39,8 @@ int main() {
         cin >> a >> b;
         Map[b][a] = Map[a][b] = true;
     }
+    Mark[1] = true;
+    Count = 1;
     DFS(1);
     if (Done)
         cout << "YES";

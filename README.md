@@ -22,3 +22,4 @@ Spoj Problems Solved
 - PT07Y 11:35am 07/05/2020 Để là cây thì phải có số đỉnh = số cạnh + 1 đồng thời liên thông => DFS để kiểm tra liên thông
 - SHOP 02:00pm 07/05/2020 Dijkstra quá quen rồi
 - CSTREET 04:25pm 07/05/2020 Sử dụng prim nhưng cũng chẳng biết đúng không
+- EKO 06:45pm 07/05/2020 Đán án sẽ nằm trong đoạn (max, max-1, ... 0) với max là chiều cao cây cao nhất, Thay vì việc tìm kiếm lần lượt từ max trở về thì ta có thể sử dụng tìm kiếm nhị phân, chia làm 2 đoạn bằng nhau, xem đoạn bên nào thỏa mãn
