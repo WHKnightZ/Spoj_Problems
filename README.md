@@ -18,3 +18,4 @@ Spoj Problems Solved
 - EZSUDOKU 07:45am 05/05/2020 kết hợp Quay lui + Quy hoạch động (lưu trữ)
 - ALLIZWEL 10:15am 05/05/2020 DFS với những điểm là 'A', xét 8 hướng, nếu theo hướng đó đi được thì DFS tiếp
 - SPIKES 05:00pm 05/05/2020 DFS từ những đỉnh là '@', cần 2 mảng để đánh dấu trạng thái trước và sau khi gặp dấu 'x', tuy nhiên có thể BFS sẽ tốt hơn. Ngoài ra có thể thấy khi chọn đường tốt nhất để đến x (số lần gặp spike ít nhất) thì đường quay lại cũng vậy nên ta chỉ cần xét xem có đường nào đi đến x mà số lần gặp Spike nhỏ hơn hoặc bằng 1/2 số mạng là ổn, ko cần quay lại nữa
+- BYTESM2 09:50am 07/05/2020 Khá quen thuộc, cơ bản là với mỗi vị trí cần xét 3 vị trí bên dưới, chọn cái lớn nhất trong 3 cái này, áp dụng thêm quy hoạch động để ko phải tính toán nhiều lần
