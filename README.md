@@ -20,3 +20,4 @@ Spoj Problems Solved
 - SPIKES 05:00pm 05/05/2020 DFS từ những đỉnh là '@', cần 2 mảng để đánh dấu trạng thái trước và sau khi gặp dấu 'x', tuy nhiên có thể BFS sẽ tốt hơn. Ngoài ra có thể thấy khi chọn đường tốt nhất để đến x (số lần gặp spike ít nhất) thì đường quay lại cũng vậy nên ta chỉ cần xét xem có đường nào đi đến x mà số lần gặp Spike nhỏ hơn hoặc bằng 1/2 số mạng là ổn, ko cần quay lại nữa
 - BYTESM2 09:50am 07/05/2020 Khá quen thuộc, cơ bản là với mỗi vị trí cần xét 3 vị trí bên dưới, chọn cái lớn nhất trong 3 cái này, áp dụng thêm quy hoạch động để ko phải tính toán nhiều lần
 - PT07Y 11:35am 07/05/2020 Để là cây thì phải có số đỉnh = số cạnh + 1 đồng thời liên thông => DFS để kiểm tra liên thông
+- SHOP 02:00pm 07/05/2020 Dijkstra quá quen rồi
