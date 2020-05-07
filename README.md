@@ -21,3 +21,4 @@ Spoj Problems Solved
 - BYTESM2 09:50am 07/05/2020 Khá quen thuộc, cơ bản là với mỗi vị trí cần xét 3 vị trí bên dưới, chọn cái lớn nhất trong 3 cái này, áp dụng thêm quy hoạch động để ko phải tính toán nhiều lần
 - PT07Y 11:35am 07/05/2020 Để là cây thì phải có số đỉnh = số cạnh + 1 đồng thời liên thông => DFS để kiểm tra liên thông
 - SHOP 02:00pm 07/05/2020 Dijkstra quá quen rồi
+- CSTREET 04:25pm 07/05/2020 Sử dụng prim nhưng cũng chẳng biết đúng không
