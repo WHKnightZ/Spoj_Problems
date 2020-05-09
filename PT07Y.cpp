@@ -54,34 +54,38 @@ int main() {
 #endif // 0
 
 // Thử chuyển sang BFS cùng với việc check xem đồ thị có chu trình không nhưng tốc độ cũng chẳng cải thiện mấy
+// Tuy nhiên, đổi cách lưu từ Map[N][N] sang vector, lưu cách đỉnh kề với nó thì tốc độ đã cải thiện đáng kể
 
 #include <iostream>
 #include <queue>
+#include <vector>
 
 using namespace std;
 
-bool Map[10001][10001];
-bool Mark[10001];
+vector<int> Map[10001];
+bool Mark[10001], Queue[10001];
 int M, N, Count;
 
 bool BFS(int n) {
     Count = 0;
     queue<int> Q;
     Q.push(n);
-    int p;
+    int p, Size, x;
     while (!Q.empty()) {
         Count++;
         if (Count == N)
             return true;
         p = Q.front();
         Q.pop();
-        for (int i = 1; i <= N; i++) {
-            if (Map[p][i]) {
-                if (Mark[i])
+        Mark[p] = true;
+        Size = Map[p].size();
+        for (int i = 0; i < Size; i++) {
+            x = Map[p][i];
+            if (!Mark[x]) {
+                if (Queue[x])
                     return false;
-                Map[p][i] = Map[i][p] = false;
-                Mark[i] = true;
-                Q.push(i);
+                Queue[x] = true;
+                Q.push(x);
             }
         }
     }
@@ -95,14 +99,12 @@ int main() {
         cout << "NO";
         return 0;
     }
-    for (int i = 1; i <= N; i++) {
-        Mark[i] = false;
-        for (int j = 1; j <= N; j++)
-            Map[i][j] = false;
-    }
+    for (int i = 1; i <= N; i++)
+        Mark[i] = Queue[i] = false;
     for (int i = 1; i <= M; i++) {
         cin >> a >> b;
-        Map[b][a] = Map[a][b] = true;
+        Map[a].push_back(b);
+        Map[b].push_back(a);
     }
     if (BFS(1))
         cout << "YES";
