@@ -24,3 +24,4 @@ Spoj Problems Solved
 - CSTREET 04:25pm 07/05/2020 Sử dụng prim nhưng cũng chẳng biết đúng không
 - EKO 06:45pm 07/05/2020 Đán án sẽ nằm trong đoạn (max, max-1, ... 0) với max là chiều cao cây cao nhất, Thay vì việc tìm kiếm lần lượt từ max trở về thì ta có thể sử dụng tìm kiếm nhị phân, chia làm 2 đoạn bằng nhau, xem đoạn bên nào thỏa mãn
 - MICEMAZE 02:00pm 08/05/2020 Lại là Dijkstra, nhưng tuy nhiên là tìm đường từ End ngược về các đỉnh, lưu ý cần check đường đi từ điểm con ở sau đến điểm đang xét
+- BUGLIFE 07:00pm 09/05/2020 Cơ bản là dùng BFS check xem có tồn tại chu trình trong đồ thị không, nhưng lưu ý là hai điểm tạo chu trình phải khác giới tính, mình cơ bản là dùng mảng Queue[] để lưu giới tính của những con ruồi đã được thêm vào hàng đợi, chưa thêm thì có giá trị 0, thêm rồi thì có giá trị 1 hoặc 2 (giới tính ngược lại với điểm cha)
