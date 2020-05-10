@@ -89,7 +89,7 @@ int DFS(int n, int d) {
             m = Distance_Dirty[n][i];
             if (m != 0) {
                 Mark_Dirty[i] = true;
-                k = m + TSP(i, d + 1);
+                k = m + DFS(i, d + 1);
                 if (Min > k)
                     Min = k;
                 Mark_Dirty[i] = false;
